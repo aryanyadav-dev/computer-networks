@@ -27,6 +27,12 @@ const developerLinks = [
     role: "Backend Developer",
     portfolio: "https://unnat-malik.vercel.app/",
     linkedin: "https://www.linkedin.com/in/unnat-malik/"
+  },
+  {
+    name: "Loukik Salvi",
+    role: "Mentor",
+    portfolio: "https://loukik-salvi.vercel.app/",
+    linkedin: "https://www.linkedin.com/in/loukik-salvi-589510164/"
   }
 ];
 
