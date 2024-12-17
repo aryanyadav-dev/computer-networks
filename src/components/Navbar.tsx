@@ -18,7 +18,7 @@ const developerLinks = [
   },
   {
     name: "Chinmay Sawant",
-    role: "Database Developer",
+    role: "UI UX Designer",
     portfolio: "",
     linkedin: "https://www.linkedin.com/in/chinmay-sawant-8b3282266/"
   },
