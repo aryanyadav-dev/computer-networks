@@ -13,7 +13,7 @@ This is a project about a Computer Networks Website that is made by my team from
 
 
 <br>
-This project is made in reference Computer Networks in Computer science engineering . This project is all about helping students understand about DBMS and learn from all the resources available in this project . 
+This project is made in reference Computer Networks in Computer science engineering . This project is all about helping students understand about Computer Networks and learn from all the resources available in this project . 
 
 Project includes : 
 - Information about various topics related to Computer Networks.
@@ -107,6 +107,6 @@ Backend Dev : Unnat Malik
 - <a href="https://github.com/UnnatMalik" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/unnat-malik-2b90bb2b4" target="_blank"> Linkedin Profile</a> 
 
-Design and Database Dev: Chinmay Sawant
+UI & UX Design : Chinmay Sawant
 - <a href="https://github.com/Chinmay-HS" target="_blank"> Github Profile</a> 
 - <a href="https://www.linkedin.com/in/chinmay-sawant-8b3282266/" target="_blank"> Linkedin Profile</a> 
