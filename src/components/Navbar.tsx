@@ -19,7 +19,7 @@ const developerLinks = [
   {
     name: "Chinmay Sawant",
     role: "UI UX Designer",
-    portfolio: "",
+    portfolio: "https://aquamarine-liger-0c035b.netlify.app/",
     linkedin: "https://www.linkedin.com/in/chinmay-sawant-8b3282266/"
   },
   {
