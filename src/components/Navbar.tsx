@@ -36,6 +36,34 @@ const developerLinks = [
   }
 ];
 
+const contentLinks = [
+  {
+    name: "Modules",
+    description: "Detailed course modules",
+    link: "#modules"
+  },
+  {
+    name: "PPTs",
+    description: "Lecture presentations",
+    link: "#ppts"
+  },
+  {
+    name: "PYQs",
+    description: "Previous Year Questions",
+    link: "#pyqs"
+  },
+  {
+    name: "Practicals",
+    description: "Lab and practical materials",
+    link: "#practicals"
+  },
+  {
+    name: "Study Materials",
+    description: "Additional study resources",
+    link: "#study-materials"
+  }
+];
+
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -65,12 +93,55 @@ const Navbar: React.FC = () => {
       <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-black/30 backdrop-blur-md rounded-full px-8 py-3 inline-flex items-center justify-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12 items-center justify-center">
-          <a
-            href="#content"
-            className="text-white hover:text-blue-400 transition-colors text-base uppercase font-medium"
-          >
-            CONTENT
-          </a>
+          {/* Desktop Content Dropdown */}
+          <div className="relative group">
+            <button className="text-white hover:text-blue-400 transition-colors flex items-center text-base uppercase font-medium">
+              CONTENT
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="ml-1 h-4 w-4 transition-transform group-hover:rotate-180"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </button>
+
+            <div className="absolute top-full mt-2 w-72 bg-black/90 backdrop-blur-md rounded-lg shadow-lg p-5 z-50 invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-all duration-300">
+              {contentLinks.map((content, index) => (
+                <React.Fragment key={index}>
+                  <div className="py-3">
+                    <div className="flex flex-col">
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-white font-semibold text-base">
+                          {content.name}
+                        </span>
+                        <a
+                          href={content.link}
+                          className="text-blue-400 hover:text-blue-300"
+                          title="Go to section"
+                        >
+                          <LinkIcon size={20} />
+                        </a>
+                      </div>
+                      <span className="text-blue-300 text-sm">
+                        {content.description}
+                      </span>
+                    </div>
+                  </div>
+                  {index < contentLinks.length - 1 && (
+                    <div className="border-t border-white/20"></div>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+          </div>
 
           {/* Desktop Developers Dropdown */}
           <div className="relative group">
