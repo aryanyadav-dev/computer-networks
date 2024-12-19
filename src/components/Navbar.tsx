@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { LinkIcon, Linkedin } from 'lucide-react';
+import { Linkedin } from 'lucide-react';
 
 const developerLinks = [
   {
@@ -40,27 +40,27 @@ const contentLinks = [
   {
     name: "Modules",
     description: "Detailed course modules",
-    link: "#modules"
+    link: "/modules"
   },
   {
     name: "PPTs",
     description: "Lecture presentations",
-    link: "#ppts"
+    link: "/ppts"
   },
   {
     name: "PYQs",
     description: "Previous Year Questions",
-    link: "#pyqs"
+    link: "/pyqs"
   },
   {
     name: "Practicals",
     description: "Lab and practical materials",
-    link: "#practicals"
+    link: "/practicals"
   },
   {
     name: "Study Materials",
     description: "Additional study resources",
-    link: "#study-materials"
+    link: "/study-materials"
   }
 ];
 
@@ -71,16 +71,13 @@ const Navbar: React.FC = () => {
     <div className="relative w-full overflow-hidden">
       {/* Top-Left Logos and Separator */}
       <div className="fixed top-4 left-4 flex items-center z-0">
-        {/* First Logo */}
         <img
           src="https://tsdcmumbai.in/images/logo/tcet_logo.png"
           alt="TCET Logo"
           className="h-24 w-24 object-contain rounded-lg"
           style={{ backgroundColor: 'transparent' }}
         />
-        {/* White Dash Separator */}
         <div className="h-24 border-l-2 border-white ml-4"></div>
-        {/* Second Logo */}
         <img
           src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
           alt="Second Logo"
@@ -119,15 +116,11 @@ const Navbar: React.FC = () => {
                   <div className="py-3">
                     <div className="flex flex-col">
                       <div className="flex items-center justify-between mb-2">
-                        <span className="text-white font-semibold text-base">
-                          {content.name}
-                        </span>
                         <a
                           href={content.link}
-                          className="text-blue-400 hover:text-blue-300"
-                          title="Go to section"
+                          className="text-white hover:text-blue-400 transition-colors font-semibold text-base"
                         >
-                          <LinkIcon size={20} />
+                          {content.name}
                         </a>
                       </div>
                       <span className="text-blue-300 text-sm">
@@ -180,7 +173,7 @@ const Navbar: React.FC = () => {
                             className="text-blue-400 hover:text-blue-300"
                             title="Portfolio"
                           >
-                            <LinkIcon size={20} />
+                            Portfolio
                           </a>
                           <a
                             href={dev.linkedin}
