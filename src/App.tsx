@@ -14,7 +14,13 @@ const App: React.FC = () => {
         className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1610563166150-fda5495f85a1?auto=format&fit=crop&q=80&w=1920&h=1080&crop=entropy')] 
         bg-cover bg-center opacity-20 z-0"
       ></div>
-      
+
+      {/* Glow Effects */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-0 left-0 w-[50vw] h-[50vw] bg-third-glow opacity-80 blur-[90px] animate-[animateBefore_7s_infinite_cubic-bezier(0.47,_0,_0.745,_0.715)]"></div>
+        <div className="absolute top-[calc(50vh_-_25vw)] left-[calc(50vw_-_25vw)] w-[500px] h-[700px] bg-secondary-glow opacity-80 blur-[90px] animate-[animateAfter_7s_infinite_cubic-bezier(0.47,_0,_0.745,_0.715)]"></div>
+      </div>
+
       <Navbar />
       
       <div className="relative z-10">

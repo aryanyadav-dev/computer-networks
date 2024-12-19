@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+@layer base {
+  body {
+    @apply bg-dark-blue-bg text-white;
+  }
 }

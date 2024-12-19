@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Linkedin } from 'lucide-react';
+import { Linkedin, Link as LinkIcon } from 'lucide-react';
 
 const developerLinks = [
   {
@@ -173,7 +173,7 @@ const Navbar: React.FC = () => {
                             className="text-blue-400 hover:text-blue-300"
                             title="Portfolio"
                           >
-                            Portfolio
+                            <LinkIcon size={20} />
                           </a>
                           <a
                             href={dev.linkedin}
