@@ -100,7 +100,7 @@ By following these steps, you should be able to set up and run your React projec
 - <a href="https://github.com/GamerZone1006" target="_blank">  Github Profile</a> 
 - <a href="https://linkedin.com/in/anushka-m-yadav" target="_blank">  Linkedin Profile</a> 
 
-Backend & DevOps Dev : Aryan Yadav 
+Frontend,Backend & DevOps Dev : Aryan Yadav 
 - <a href="https://github.com/aryanyadav-dev" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/-aryanyadav" target="_blank">  Linkedin Profile</a> 
 

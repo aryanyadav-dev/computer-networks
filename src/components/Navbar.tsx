@@ -12,7 +12,7 @@ const developerLinks = [
   },
   {
     name: "Aryan Yadav",
-    role: "Backend & DevOps Developer",
+    role: "Frontend, Backend & DevOps Developer",
     portfolio: "https://aryanyadav-portfolio.vercel.app/",
     linkedin: "https://www.linkedin.com/in/-aryanyadav/"
   },
