@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: 'Montserrat', sans-serif; /* Updated to Montserrat */
-  text-transform: uppercase; /* Make text uppercase */
+  font-family: 'Montserrat', sans-serif; 
+  text-transform: uppercase; 
 }
 
 .animated-title > div {
@@ -62,7 +62,7 @@
 }
 
 .text-white {
-  font-family: 'Montserrat', sans-serif; /* Updated font */
+  font-family: 'Montserrat', sans-serif; 
   color: white;
   font-weight: bold;
   font-size: 5rem;
