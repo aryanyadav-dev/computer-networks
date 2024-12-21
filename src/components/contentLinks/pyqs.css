@@ -1,0 +1,23 @@
+.pyqs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Centers content vertically */
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .pyqs-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ffffff; /* White text color */
+    margin-bottom: 1rem;
+  }
+  
+  .pyqs-text {
+    font-size: 1.25rem;
+    color: #d1d5db; /* Light gray text color */
+    max-width: 600px; /* Constrain the paragraph width */
+  }
+  

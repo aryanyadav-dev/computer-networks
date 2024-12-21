@@ -15,7 +15,7 @@ import { topics } from './data/topics';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-black via-blue-900 to-black bg-fixed">
+      <div className="flex flex-col min-h-screen bg-gradient-to-br from-black via-blue-900 to-black bg-fixed">
         {/* Network-Themed Background */}
         <div
           className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1610563166150-fda5495f85a1?auto=format&fit=crop&q=80&w=1920&h=1080&crop=entropy')] 
@@ -41,7 +41,7 @@ const App: React.FC = () => {
         <Navbar />
 
         {/* Main Content */}
-        <div className="relative z-10">
+        <main className="flex-grow relative z-10">
           <Routes>
             {/* Default Route - Hero Section with Topics */}
             <Route
@@ -49,7 +49,7 @@ const App: React.FC = () => {
               element={
                 <>
                   <Hero />
-                  <main className="container mx-auto px-4" id="content">
+                  <div className="container mx-auto px-4" id="content">
                     {/* Topic Cards */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                       {topics.map((topic, index) => (
@@ -59,7 +59,7 @@ const App: React.FC = () => {
 
                     {/* Resources Section */}
                     <ResourcesSection />
-                  </main>
+                  </div>
                 </>
               }
             />
@@ -71,10 +71,10 @@ const App: React.FC = () => {
             <Route path="/practicals" element={<Practicals />} />
             <Route path="/study-materials" element={<StudyMaterials />} />
           </Routes>
+        </main>
 
-          {/* Footer */}
-          <Footer />
-        </div>
+        {/* Footer */}
+        <Footer />
       </div>
     </Router>
   );
