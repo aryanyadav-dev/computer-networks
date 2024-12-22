@@ -80,7 +80,7 @@ const Navbar: React.FC = () => {
         <div className="h-24 border-l-2 border-white ml-4"></div>
         <img
           src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
-          alt="Second Logo"
+          alt="Comp Logo"
           className="h-24 w-24 object-contain ml-4 rounded-lg"
           style={{ backgroundColor: 'transparent' }}
         />
