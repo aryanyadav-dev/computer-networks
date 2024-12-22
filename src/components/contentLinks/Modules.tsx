@@ -8,7 +8,7 @@ const moduleData = [
     title: 'Network Fundamentals',
     description: 'Learn the basics of computer networking, protocols, and architecture',
     color: '#FFE4E4',
-    url: 'https://example.com/module1.pdf',
+    url: 'https://drive.google.com/file/d/1DICgX2ghNCpc_9OJ-C-YhpJ_tw4W_dA2/view',
     icon: <Network size={24} color="#000" />
   },
   {

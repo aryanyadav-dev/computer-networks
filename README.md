@@ -30,7 +30,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 - [React.js](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [Django](https://docs.djangoproject.com/en/5.1/)
 
 ## Getting Started
 
