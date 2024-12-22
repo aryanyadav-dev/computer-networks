@@ -7,3 +7,19 @@
     @apply bg-dark-blue-bg text-white;
   }
 }
+
+@font-face {
+  font-family: 'Noir Pro';
+  src: url('https://db.onlinewebfonts.com/t/260a8b23bb409d76f49780ba6f2c8638.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noir Pro';
+  src: url('https://db.onlinewebfonts.com/t/260a8b23bb409d76f49780ba6f2c8638.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
