@@ -94,19 +94,19 @@ By following these steps, you should be able to set up and run your React projec
    - The website is fully responsive and can be accessed on desktops, tablets, and mobile devices.
 
 ## Contact
-
- Frontend Dev : Anushka Yadav 
-- <a href="https://github.com/GamerZone1006" target="_blank">  Github Profile</a> 
-- <a href="https://linkedin.com/in/anushka-m-yadav" target="_blank">  Linkedin Profile</a> 
-
 Frontend,Backend & DevOps Dev : Aryan Yadav 
 - <a href="https://github.com/aryanyadav-dev" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/-aryanyadav" target="_blank">  Linkedin Profile</a> 
+
+UI & UX Design : Chinmay Sawant
+- <a href="https://github.com/Chinmay-HS" target="_blank"> Github Profile</a> 
+- <a href="https://www.linkedin.com/in/chinmay-sawant-8b3282266/" target="_blank"> Linkedin Profile</a> 
+
+Frontend Dev : Anushka Yadav 
+- <a href="https://github.com/GamerZone1006" target="_blank">  Github Profile</a> 
+- <a href="https://linkedin.com/in/anushka-m-yadav" target="_blank">  Linkedin Profile</a> 
 
 Backend Dev : Unnat Malik 
 - <a href="https://github.com/UnnatMalik" target="_blank"> Github Profile</a> 
 - <a href="https://linkedin.com/in/unnat-malik-2b90bb2b4" target="_blank"> Linkedin Profile</a> 
 
-UI & UX Design : Chinmay Sawant
-- <a href="https://github.com/Chinmay-HS" target="_blank"> Github Profile</a> 
-- <a href="https://www.linkedin.com/in/chinmay-sawant-8b3282266/" target="_blank"> Linkedin Profile</a> 
