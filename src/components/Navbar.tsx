@@ -5,12 +5,6 @@ import { Linkedin, Link as LinkIcon } from 'lucide-react';
 
 const developerLinks = [
   {
-    name: "Anushka Yadav",
-    role: "Frontend Developer",
-    portfolio: "https://anushka-portofolio.vercel.app/",
-    linkedin: "https://www.linkedin.com/in/anushka-m-yadav/"
-  },
-  {
     name: "Aryan Yadav",
     role: "Frontend, Backend & DevOps Developer",
     portfolio: "https://aryanyadav-portfolio.vercel.app/",
@@ -21,6 +15,12 @@ const developerLinks = [
     role: "UI UX Designer",
     portfolio: "https://aquamarine-liger-0c035b.netlify.app/",
     linkedin: "https://www.linkedin.com/in/chinmay-sawant-8b3282266/"
+  },
+  {
+    name: "Anushka Yadav",
+    role: "Frontend Developer",
+    portfolio: "https://anushka-portofolio.vercel.app/",
+    linkedin: "https://www.linkedin.com/in/anushka-m-yadav/"
   },
   {
     name: "Unnat Malik",
