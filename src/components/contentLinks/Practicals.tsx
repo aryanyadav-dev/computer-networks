@@ -30,7 +30,7 @@ const practicalData = [
     title: 'Practical 5: IP addressing, Subnet and Subnet Mask',
     description: 'Set up and configure IP addressing, subnetting, masking a network using CISCO packet tracer.',
     color: '#FFE4E4',
-    url: 'https://drive.google.com/file/d/1jCqan-4amyQgMkmQuu4xldsqXauFXldy/view'
+    url: 'https://drive.google.com/file/d/1z321Iz4EzmuQEkCEl3TfO-A7c04xkni4/view'
   },
   {
     title: 'Practical 6',
