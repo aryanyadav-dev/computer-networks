@@ -16,7 +16,7 @@ const StudyCard: React.FC<StudyCardProps> = ({ title, description, color, url })
         <p className="study-card-description">{description}</p>
       </div>
       <a href={url} target="_blank" rel="noopener noreferrer" className="study-card-download">
-        <Download size={20} color="white" /> {/* Use the Download icon */}
+        <Download size={24} color="white" /> 
       </a>
     </div>
   );

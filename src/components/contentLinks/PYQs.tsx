@@ -4,13 +4,13 @@ import './pyqs.css';
 
 const pyqData = [
   {
-    title: 'Networking Basics - 2022',
+    title: 'Networking QP Solution - 2010',
     description: 'Previous year questions on the basics of networking.',
     color: '#FFE4E4',
-    url: 'https://example.com/networking-basics-2022.pdf'
+    url: 'https://example.com/data-communication-2020.pdf'
   },
   {
-    title: 'Data Communication - 2021',
+    title: 'Networking QP Solution - 2011',
     description: 'Past exam questions related to data communication concepts.',
     color: '#E4FFE4',
     url: 'https://example.com/data-communication-2021.pdf'

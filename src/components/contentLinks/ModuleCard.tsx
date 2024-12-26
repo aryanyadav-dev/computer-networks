@@ -25,9 +25,11 @@ const ModuleCard: React.FC<ModuleCardProps> = ({ title, description, color, url,
         <h3 className="module-card-title">{title}</h3>
         <p className="module-card-description">{description}</p>
       </div>
-      <a href={url} target="_blank" rel="noopener noreferrer" className="module-card-download">
-        <Download size={20} />
-      </a>
+      <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'center' }}>
+        <a href={url} target="_blank" rel="noopener noreferrer" className="module-card-download">
+          <Download size={20} />
+        </a>
+      </div>
     </motion.div>
   );
 };
