@@ -74,14 +74,14 @@ const Navbar: React.FC = () => {
         <img
           src="https://tsdcmumbai.in/images/logo/tcet_logo.png"
           alt="TCET Logo"
-          className="h-24 w-24 object-contain rounded-lg"
+          className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-lg"
           style={{ backgroundColor: 'transparent' }}
         />
-        <div className="h-24 border-l-2 border-white ml-4"></div>
+        <div className="h-16 md:h-24 border-l-2 border-white ml-4"></div>
         <img
           src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
           alt="Comp Logo"
-          className="h-24 w-24 object-contain ml-4 rounded-lg"
+          className="h-16 w-16 md:h-24 md:w-24 object-contain ml-4 rounded-lg"
           style={{ backgroundColor: 'transparent' }}
         />
       </div>
@@ -241,13 +241,56 @@ const Navbar: React.FC = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <div className="md:hidden absolute top-full left-0 right-0 mt-2 bg-black/90 backdrop-blur-md rounded-lg">
-            <a
-              href="#content"
-              className="block text-white hover:text-blue-400 py-3 px-4 uppercase text-sm font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              CONTENT
-            </a>
+            <div className="p-4">
+              <div className="pb-4">
+                <h2 className="text-white text-lg font-semibold">Content</h2>
+                {contentLinks.map((content, index) => (
+                  <a
+                    key={index}
+                    href={content.link}
+                    className="block text-white hover:text-blue-400 py-2 text-sm font-medium"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {content.name}
+                  </a>
+                ))}
+              </div>
+              <div className="border-t border-white/20 pt-4">
+                <h2 className="text-white text-lg font-semibold">Developers</h2>
+                {developerLinks.map((dev, index) => (
+                  <div key={index} className="py-2">
+                    <div className="flex justify-between">
+                      <span className="text-white text-sm font-medium">
+                        {dev.name}
+                      </span>
+                      <div className="flex space-x-2">
+                        <a
+                          href={dev.portfolio}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300"
+                          title="Portfolio"
+                        >
+                          <LinkIcon size={16} />
+                        </a>
+                        <a
+                          href={dev.linkedin}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-400 hover:text-blue-300"
+                          title="LinkedIn"
+                        >
+                          <Linkedin size={16} />
+                        </a>
+                      </div>
+                    </div>
+                    <span className="text-blue-300 text-xs uppercase">
+                      {dev.role}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         )}
       </nav>
