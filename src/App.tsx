@@ -4,11 +4,11 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import TopicCard from './components/TopicCard';
-import Modules from '../src/components/contentLinks/Modules';
-import PPTs from '../src/components/contentLinks/PPTs';
-import PYQs from '../src/components/contentLinks/PYQs';
-import Practicals from '../src/components/contentLinks/Practicals';
-import StudyMaterials from '../src/components/contentLinks/StudyMaterials';
+import Modules from './components/contentLinks/Modules';
+import PPTs from './components/contentLinks/PPTs';
+import PYQs from './components/contentLinks/PYQs';
+import Practicals from './components/contentLinks/Practicals';
+import StudyMaterials from './components/contentLinks/StudyMaterials';
 import ResourcesSection from './components/ResourcesSection';
 import { topics } from './data/topics';
 
