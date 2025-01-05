@@ -70,6 +70,7 @@ const contentLinks = [
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [devDropdownOpen, setDevDropdownOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // State to control the mobile menu visibility
 
   return (
     <div className="relative w-full overflow-hidden">
@@ -105,9 +106,30 @@ const Navbar: React.FC = () => {
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-40 bg-black/30 backdrop-blur-md rounded-full px-8 py-3 inline-flex items-center justify-center">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-40 bg-black/30 backdrop-blur-md rounded-full px-8 py-3 inline-flex items-center justify-center w-full md:w-auto">
+        {/* Hamburger Icon for Mobile */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
         {/* Desktop Menu */}
-        <div className="hidden md:flex space-x-12 items-center justify-center">
+        <div className={`hidden md:flex space-x-12 items-center justify-center`}>
           {/* Desktop Content Dropdown */}
           <div className="relative group">
             <button className="text-white hover:text-blue-400 transition-colors flex items-center text-base uppercase font-medium">
@@ -215,6 +237,50 @@ const Navbar: React.FC = () => {
                 </React.Fragment>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`md:hidden fixed top-0 left-0 w-full h-full bg-black/70 backdrop-blur-md z-50 transition-all duration-300 ${
+            menuOpen ? 'block' : 'hidden'
+          }`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <div className="flex flex-col items-center justify-center space-y-6 pt-24">
+            {contentLinks.map((content, index) => (
+              <Link
+                key={index}
+                to={content.link}
+                className="text-white text-xl hover:text-blue-400"
+                onClick={() => setMenuOpen(false)}
+              >
+                {content.name}
+              </Link>
+            ))}
+            {developerLinks.map((dev, index) => (
+              <div key={index} className="text-white text-xl">
+                <span>{dev.name}</span>
+                <div className="flex space-x-3">
+                  <a
+                    href={dev.portfolio}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300"
+                  >
+                    <LinkIcon size={20} />
+                  </a>
+                  <a
+                    href={dev.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300"
+                  >
+                    <Linkedin size={20} />
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </nav>
