@@ -65,26 +65,44 @@ const contentLinks = [
 ];
 
 const Navbar: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle
-  const [devDropdownOpen, setDevDropdownOpen] = useState(false); // Developers dropdown toggle
+  const [isOpen, setIsOpen] = useState(false);
+  const [devDropdownOpen, setDevDropdownOpen] = useState(false);
 
   return (
     <div className="relative w-full overflow-hidden">
-      {/* Top-Left Logos and Separator */}
+      {/* Updated Top-Left Logos and Separator */}
       <div className="fixed top-4 left-4 flex items-center z-0">
-        <img
-          src="https://tsdcmumbai.in/images/logo/tcet_logo.png"
-          alt="TCET Logo"
-          className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-lg"
-          style={{ backgroundColor: 'transparent' }}
-        />
+        {/* TCET Logo */}
+        <a 
+          href="https://tsdcmumbai.in/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="transition-transform hover:scale-105"
+        >
+          <img
+            src="https://tsdcmumbai.in/images/logo/tcet_logo.png"
+            alt="TCET Logo"
+            className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-lg"
+            style={{ backgroundColor: 'transparent' }}
+          />
+        </a>
+        
         <div className="h-16 md:h-24 border-l-2 border-white ml-4"></div>
-        <img
-          src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
-          alt="Comp Logo"
-          className="h-16 w-16 md:h-24 md:w-24 object-contain ml-4 rounded-lg"
-          style={{ backgroundColor: 'transparent' }}
-        />
+        
+        {/* Computer Engineering Department Logo */}
+        <a 
+          href="https://pradnyaavtare14.github.io/tcet-website/comp.html" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="transition-transform hover:scale-105"
+        >
+          <img
+            src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
+            alt="Computer Engineering Department Logo"
+            className="h-16 w-16 md:h-24 md:w-24 object-contain ml-4 rounded-lg"
+            style={{ backgroundColor: 'transparent' }}
+          />
+        </a>
       </div>
 
       {/* Navbar */}
