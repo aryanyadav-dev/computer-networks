@@ -1,7 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Linkedin, Link as LinkIcon } from 'lucide-react';
+import tcetLogo from '/tcet_logo.png';
+import compLogo from '/comp.png';
 
 const developerLinks = [
   {
@@ -71,42 +74,38 @@ const Navbar: React.FC = () => {
   return (
     <div className="relative w-full overflow-hidden">
       {/* Updated Top-Left Logos and Separator */}
-      <div className="fixed top-4 left-4 flex items-center z-0">
+      <div className="fixed top-4 left-4 flex items-center z-50">
         {/* TCET Logo */}
-        <a 
-          href="https://tsdcmumbai.in/" 
-          target="_blank" 
-          rel="noopener noreferrer"
+        <Link
+          to="https://comp-networks.vercel.app/"
           className="transition-transform hover:scale-105"
         >
           <img
-            src="https://tsdcmumbai.in/images/logo/tcet_logo.png"
+            src={tcetLogo}
             alt="TCET Logo"
             className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-lg"
             style={{ backgroundColor: 'transparent' }}
           />
-        </a>
-        
+        </Link>
+
         <div className="h-16 md:h-24 border-l-2 border-white ml-4"></div>
-        
+
         {/* Computer Engineering Department Logo */}
-        <a 
-          href="https://pradnyaavtare14.github.io/tcet-website/comp.html" 
-          target="_blank" 
-          rel="noopener noreferrer"
+        <Link
+          to="https://comp-networks.vercel.app/"
           className="transition-transform hover:scale-105"
         >
           <img
-            src="https://pradnyaavtare14.github.io/tcet-website/comp.png"
+            src={compLogo}
             alt="Computer Engineering Department Logo"
             className="h-16 w-16 md:h-24 md:w-24 object-contain ml-4 rounded-lg"
             style={{ backgroundColor: 'transparent' }}
           />
-        </a>
+        </Link>
       </div>
 
       {/* Navbar */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 bg-black/30 backdrop-blur-md rounded-full px-8 py-3 inline-flex items-center justify-center">
+      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-40 bg-black/30 backdrop-blur-md rounded-full px-8 py-3 inline-flex items-center justify-center">
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-12 items-center justify-center">
           {/* Desktop Content Dropdown */}
@@ -135,12 +134,12 @@ const Navbar: React.FC = () => {
                   <div className="py-3">
                     <div className="flex flex-col">
                       <div className="flex items-center justify-between mb-2">
-                        <a
-                          href={content.link}
+                        <Link
+                          to={content.link}
                           className="text-white hover:text-blue-400 transition-colors font-semibold text-base"
                         >
                           {content.name}
-                        </a>
+                        </Link>
                       </div>
                       <span className="text-blue-300 text-sm">
                         {content.description}
@@ -218,128 +217,6 @@ const Navbar: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white p-1"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M6 18L18 6M6 6l12 12"
-              />
-            </svg>
-          ) : (
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          )}
-        </button>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden fixed top-16 left-1/2 -translate-x-1/2 w-15/17 max-w-sm bg-black/90 backdrop-blur-md rounded-lg shadow-lg max-h-[80vh] overflow-y-auto">
-            <div className="p-4">
-              {/* Content Section */}
-              <div className="pb-4">
-                <h2 className="text-white text-lg font-semibold">Content</h2>
-                {contentLinks.map((content, index) => (
-                  <a
-                    key={index}
-                    href={content.link}
-                    className="block text-white hover:text-blue-400 py-2 text-sm font-medium"
-                    onClick={() => setIsOpen(false)}
-                  >
-                    {content.name}
-                  </a>
-                ))}
-              </div>
-
-              {/* Developer Section */}
-              <div className="border-t border-white/20 pt-4">
-                <button
-                  onClick={() => setDevDropdownOpen(!devDropdownOpen)}
-                  className="flex justify-between items-center text-white text-lg font-semibold w-full"
-                >
-                  Developers
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className={`h-5 w-5 transition-transform ${
-                      devDropdownOpen ? "rotate-180" : ""
-                    }`}
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M19 9l-7 7-7-7"
-                    />
-                  </svg>
-                </button>
-                {devDropdownOpen && (
-                  <div className="pt-2">
-                    {developerLinks.map((dev, index) => (
-                      <div key={index} className="py-2">
-                        <div className="flex justify-between">
-                          <span className="text-white text-sm font-medium">
-                            {dev.name}
-                          </span>
-                          <div className="flex space-x-2">
-                            <a
-                              href={dev.portfolio}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-400 hover:text-blue-300"
-                              title="Portfolio"
-                            >
-                              <LinkIcon size={16} />
-                            </a>
-                            <a
-                              href={dev.linkedin}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="text-blue-400 hover:text-blue-300"
-                              title="LinkedIn"
-                            >
-                              <Linkedin size={16} />
-                            </a>
-                          </div>
-                        </div>
-                        <span className="text-blue-300 text-xs uppercase">
-                          {dev.role}
-                        </span>
-                      </div>
-                    ))}
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-        )}
       </nav>
     </div>
   );
