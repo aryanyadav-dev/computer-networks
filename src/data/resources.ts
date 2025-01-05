@@ -1,4 +1,4 @@
-import { Video, Server, FileText } from 'lucide-react';
+import { Video, Server, FileText, BookOpen } from 'lucide-react';
 
 export const resources = [
   {
@@ -25,5 +25,27 @@ export const resources = [
     links: [
       { name: "Networking Practice Problems PDF", url: "https://drive.google.com/file/d/1DICgX2ghNCpc_9OJ-C-YhpJ_tw4W_dA2/view" }
     ]
+  },
+  {
+    title: "YouTube Tutorials",
+    icon: Video,
+    links: [
+      { name: "Networking Tutorials Playlist 1", url: "https://youtube.com/playlist?list=PL-XMIxXL1qWKzlMNVyUTQny24JKmC0RP8&si=KXheo5IxEwdIL0O8" },
+      { name: "Networking Tutorials Playlist 2", url: "https://youtube.com/playlist?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&si=5Sq7_Zdnz-sky45x" },
+      { name: "Networking Tutorials Playlist 3", url: "https://youtube.com/playlist?list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx&si=kDV_WDMe3Y1x2tdj" }
+    ]
+  },
+  {
+    title: "Learning Courses",
+    icon: BookOpen,
+    links: [
+      { name: "Scaler Computer Networks Course", url: "https://www.scaler.com/topics/course/free-computer-networks-course/" },
+      { name: "Basics of Computer Networking Couse", url: "https://www.mygreatlearning.com/academy/learn-for-free/courses/basics-of-computer-networking" },
+      { name: "DNS Deep Dive Course", url: "https://www.udemy.com/course/dns-deep-dive/" },
+      { name: "Networking Fundamentals Course", url: "https://www.udemy.com/course/complete-networking-fundamentals-course-ccna-start/" },
+      { name: "Computer Networking Masterclass: Interview Success", url: "https://www.udemy.com/course/computer-networking-masterclass-interview-success/" },
+      { name: "Cyber Security Masterclass - All about IT Security", url: "https://www.udemy.com/course/cyber-security-masterclass-all-about-it-security/" },
+    ]
   }
 ] as const;
+
