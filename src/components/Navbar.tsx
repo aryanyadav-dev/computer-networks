@@ -18,18 +18,6 @@ const developerLinks = [
     linkedin: "https://www.linkedin.com/in/chinmay-sawant-8b3282266/",
   },
   {
-    name: "Anushka Yadav",
-    role: "Frontend Developer",
-    portfolio: "https://anushka-portofolio.vercel.app/",
-    linkedin: "https://www.linkedin.com/in/anushka-m-yadav/",
-  },
-  {
-    name: "Unnat Malik",
-    role: "Backend Developer",
-    portfolio: "https://unnat-malik.vercel.app/",
-    linkedin: "https://www.linkedin.com/in/unnat-malik/",
-  },
-  {
     name: "Loukik Salvi",
     role: "Mentor",
     portfolio: "https://loukik-salvi.vercel.app/",
