@@ -23,7 +23,7 @@ export const resources = [
     title: "Practice Problems",
     icon: FileText,
     links: [
-      { name: "Networking Practice Problems PDF", url: "https://drive.google.com/file/d/1DICgX2ghNCpc_9OJ-C-YhpJ_tw4W_dA2/view" }
+      { name: "Networking Practice Problems PDF", url: "https://drive.google.com/file/d/1XKTa1O1gZLmXQ2wrLrpa6bNa0epm_WCp/view" }
     ]
   },
   {
