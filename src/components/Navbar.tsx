@@ -82,12 +82,12 @@ const Navbar: React.FC = () => {
             <img
               src={tcetLogo}
               alt="TCET Logo"
-              className="h-13 w-13 md:h-20 md:w-20 object-contain rounded-lg"
+              className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-lg"
               style={{ backgroundColor: 'transparent' }}
             />
           </Link>
 
-          <div className="h-13 md:h-20 border-l-2 border-white ml-4"></div>
+          <div className="h-16 md:h-24 border-l-2 border-white ml-4"></div>
 
           <Link
             to="https://comp-networks.vercel.app/"
@@ -96,14 +96,14 @@ const Navbar: React.FC = () => {
             <img
               src={compLogo}
               alt="Computer Engineering Department Logo"
-              className="h-13 w-13 md:h-20 md:w-20 object-contain ml-4 rounded-lg"
+              className="h-16 w-16 md:h-24 md:w-24 object-contain ml-4 rounded-lg"
               style={{ backgroundColor: 'transparent' }}
             />
           </Link>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex fixed top-8 left-1/2 -translate-x-1/2 z-40 bg-black/30 backdrop-blur-md rounded-full px-10 py-6 items-center justify-center">
+        <nav className="hidden md:flex fixed top-7 left-1/2 -translate-x-1/2 z-40 bg-black/30 backdrop-blur-md rounded-full px-10 py-6 items-center justify-center">
           <div className="flex space-x-12 items-center justify-center">
             {/* Desktop Content Dropdown */}
             <div className="relative group">

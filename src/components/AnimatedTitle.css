@@ -10,8 +10,8 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  font-family: 'Montserrat', sans-serif; 
-  text-transform: uppercase; 
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
 }
 
 .animated-title > div {
@@ -31,7 +31,6 @@
 .animated-title > div.text-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   top: 0;
-
 }
 
 .animated-title > div.text-top div {
@@ -39,6 +38,7 @@
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
   transform: translate(0, 100%);
+  margin-top: 30px; /* Increased value to move "Computer" further down */
 }
 
 .animated-title > div.text-bottom {
@@ -52,8 +52,6 @@
   transform: translate(0, -100%);
 }
 
-
-
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }
   100% { transform: translate3d(0, 0, 0); }
@@ -65,7 +63,7 @@
 }
 
 .text-white {
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
   color: white;
   font-weight: bold;
   font-size: 5rem;
@@ -75,12 +73,23 @@
   font-size: 6rem;
 }
 
+.text-blue-400 {
+  font-family: 'Montserrat', sans-serif;
+  color: #60a5fa; /* Tailwind's blue-400 */
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+.text-blue-400.md\:text-7xl {
+  font-size: 6rem;
+}
+
 @media (max-width: 768px) {
-  .text-white {
+  .text-white, .text-blue-400 {
     font-size: 3rem;
   }
 
-  .text-white.md\:text-7xl {
+  .text-white.md\:text-7xl, .text-blue-400.md\:text-7xl {
     font-size: 4rem;
   }
 }
