@@ -31,6 +31,7 @@
 .animated-title > div.text-top {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   top: 0;
+
 }
 
 .animated-title > div.text-top div {
@@ -50,6 +51,8 @@
   animation-fill-mode: forwards;
   transform: translate(0, -100%);
 }
+
+
 
 @keyframes showTopText {
   0% { transform: translate3d(0, 100%, 0); }

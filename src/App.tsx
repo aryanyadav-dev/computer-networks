@@ -15,27 +15,13 @@ import { topics } from './data/topics';
 const App: React.FC = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-gradient-to-br from-black via-blue-900 to-black bg-fixed">
+      <div className="flex flex-col min-h-screen">
         {/* Network-Themed Background */}
         <div
-          className="fixed inset-0 bg-[url('https://images.unsplash.com/photo-1610563166150-fda5495f85a1?auto=format&fit=crop&q=80&w=1920&h=1080&crop=entropy')] 
-          bg-cover bg-center opacity-20 z-0"
+          className="fixed inset-0 bg-[url('/Gradient_1.png')] 
+          bg-cover bg-center opacity-100 z-0"  
           aria-hidden="true"
         ></div>
-
-        {/* Glow Effects */}
-        <div className="absolute inset-0 z-0">
-          <div
-            className="absolute top-0 left-0 w-[50vw] h-[50vw] bg-third-glow opacity-80 
-            blur-[90px] animate-[animateBefore_7s_infinite_cubic-bezier(0.47,_0,_0.745,_0.715)]"
-            aria-hidden="true"
-          ></div>
-          <div
-            className="absolute top-[calc(50vh_-_25vw)] left-[calc(50vw_-_25vw)] w-[500px] h-[700px] bg-secondary-glow 
-            opacity-80 blur-[90px] animate-[animateAfter_7s_infinite_cubic-bezier(0.47,_0,_0.745,_0.715)]"
-            aria-hidden="true"
-          ></div>
-        </div>
 
         {/* Navbar */}
         <Navbar />

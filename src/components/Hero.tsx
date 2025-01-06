@@ -7,10 +7,28 @@ const Hero: React.FC = () => {
       {/* Content */}
       <div className="relative z-10">
         <AnimatedTitle />
-        <p className="text-xl text-blue-200 max-w-2xl mx-auto px-4 mt-12 opacity-0 animate-[fadeIn_1s_ease-in_forwards_2.5s]">
-          Explore the fundamentals of computer networking, protocols, and modern network architectures
+        
+        {/* Description with inline animation */}
+        <p
+          className="text-xl text-blue-200 max-w-2xl mx-auto px-10 mt-5"
+          style={{
+            opacity: 0,
+            animation: 'fadeInDescription 2s ease-in forwards 1.5s', // Animation with delay
+          }}
+        >
+          Explore the fundamentals of computer networking, protocols, and modern network architectures.
         </p>
       </div>
+
+      {/* Inline keyframes for animation */}
+      <style>
+        {`
+          @keyframes fadeInDescription {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+          }
+        `}
+      </style>
     </div>
   );
 };

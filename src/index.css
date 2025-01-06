@@ -2,12 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Set default body styles */
 @layer base {
   body {
-    @apply bg-dark-blue-bg text-white;
+    @apply bg-dark-blue-bg text-white; /* Your custom Tailwind colors */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default paddings */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+    font-family: 'Noir Pro', sans-serif; /* Apply custom font */
+  }
+
+  html {
+    scroll-behavior: smooth; /* Smooth scrolling for better UX */
   }
 }
 
+/* Font-face declarations */
 @font-face {
   font-family: 'Noir Pro';
   src: url('https://db.onlinewebfonts.com/t/260a8b23bb409d76f49780ba6f2c8638.woff2') format('woff2');
@@ -23,3 +33,10 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Debugging outline for development (optional, remove for production) */
+/*
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
+*/
