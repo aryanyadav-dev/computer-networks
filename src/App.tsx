@@ -18,7 +18,7 @@ const App: React.FC = () => {
       <div className="flex flex-col min-h-screen">
         {/* Network-Themed Background */}
         <div
-          className="fixed inset-0 bg-[url('/Gradient_1.png')] 
+          className="fixed inset-0 bg-[url('/Gradient_1.jpg')] 
           bg-cover bg-center opacity-100 z-0"  
           aria-hidden="true"
         ></div>
