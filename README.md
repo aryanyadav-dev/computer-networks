@@ -8,7 +8,8 @@ This is a project about a Computer Networks Website that is made by my team from
 </div>
 
 ## About The Project
-<img width="1470" alt="Screenshot 2024-12-20 at 1 44 10 AM" src="https://github.com/user-attachments/assets/93c1723e-46fe-4c79-8d0f-19a41e5fdeeb" />
+<img width="1470" alt="Screenshot 2025-01-08 at 8 00 43 PM" src="https://github.com/user-attachments/assets/84d461db-9008-4630-bed6-d5ecaabf96e8" />
+
 
 
 
