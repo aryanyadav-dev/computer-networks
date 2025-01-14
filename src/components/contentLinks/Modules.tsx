@@ -15,7 +15,7 @@ const moduleData = [
     title: 'Introduction to TCP/IP Addressing',
     description: 'Learn the TCP/IP Protocol Suite, addressing types, IPv4 addressing, NAT, and translation tables.',
     color: '#E4FFE4',
-    url: 'https://example.com/module2.pdf',
+    url: '',
     icon: <Database size={24} color="#000" />
   },
   {
@@ -43,7 +43,7 @@ const moduleData = [
     title: 'Application Layer',
     description: 'Learn about application protocols, web applications, and socket programming with UDP and TCP.',
     color: '#E5E5E5',
-    url: 'https://example.com/module6.pdf',
+    url: '',
     icon: <Shield size={24} color="#000" />
   }
 ];

@@ -36,7 +36,7 @@ const practicalData = [
     title: 'Practical 6',
     description: 'Lab exercises focused on cloud networking and infrastructure.',
     color: '#E4FFE4',
-    url: 'https://example.com/cloud-networking-lab.pptx'
+    url: ''
   },
   {
     title: 'Practical 7: Implementing Dynamic routing',
@@ -54,7 +54,7 @@ const practicalData = [
     title: 'Practical 9',
     description: 'Set up and configure a wireless network, including access points, SSID, and security configurations.',
     color: '#D4E4FF',
-    url: 'https://example.com/wireless-networking-lab.pptx'
+    url: ''
   },
   {
     title: 'Practical 10: Simulating CSMA/CD for a Local Area Network',
